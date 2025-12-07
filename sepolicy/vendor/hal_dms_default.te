@@ -17,3 +17,5 @@ allow hal_dms_default init:unix_stream_socket connectto;
 
 binder_call(hal_dms_default, hal_audio_default)
 binder_call(hal_dms_default, platform_app)
+
+get_prop(hal_dms_default, vendor_audio_prop);
